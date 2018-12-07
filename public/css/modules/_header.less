@@ -1,0 +1,87 @@
+///--- Header ---
+
+.hdr {
+	&--container {
+		max-height: 120px;
+	}
+
+	&--topnav {
+		background-color: @primary; //height: 30px;
+
+		&--links {
+			list-style: none;
+			float: right;
+			margin: 0;
+		}
+
+		&--a {
+			color: #fff;
+			text-decoration: none;
+			padding: 6px 8px;
+		}
+
+		&--link {
+			display: inline-block;
+			margin: 0;
+			line-height: 30px;
+			letter-spacing: -1px;
+
+
+			&:hover {
+				color: @primary;
+				background-color: #fff;
+
+				& .hdr--topnav--a {
+					color: @primary;
+				}
+			}
+		}
+	}
+
+	&--logo {
+		padding-left: 20px;
+		margin-top: -20px;
+
+		&--bg {
+			background: linear-gradient(#fff, @light-grey);
+		}
+
+		&--a {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	&--btmnav {
+		background-color: @mid-grey;
+		margin-top: -7px;
+
+		&--links {
+			list-style: none;
+			margin: 0;
+			text-align: center;
+		}
+
+		&--a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px 7px;
+		}
+
+		&--link {
+			display: inline-block;
+			line-height: 40px;
+			margin: 0;
+			letter-spacing: -1px;
+
+			&:hover {
+				background-color: #fff;
+				color: @mid-grey;
+
+				& .hdr--btmnav--a {
+					color: @mid-grey;
+				}
+			}
+		}
+	}
+}
