@@ -69,6 +69,12 @@ input[type="submit"] {
 		border-color: tint(@primary, 15%);
 		color: #fff;
 	}
+
+	&:focus {
+		background-color: tint(@primary, 15%);
+		border-color: tint(@primary, 15%);
+		color: #fff;
+	}
 }
 
 input[type="text"],
@@ -266,6 +272,25 @@ textarea:focus,
 select:focus {
 	border: 1px solid @primary;
 	outline: 0;
+}
+
+///--- Modelo Info ---
+
+.modelo--info {
+	margin-top: 30px;
+
+	&--figure {
+		margin: 15px;
+	}
+
+	&--nota01 {
+		color: #ff0000;
+	}
+
+	&--heading {
+		margin-bottom: 10px;
+	}
+
 }
 
 ///--- Media Quieries ---
