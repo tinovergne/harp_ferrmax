@@ -1,0 +1,45 @@
+///--- Buttons ---
+
+.button.button-primary,
+input[type="submit"] {
+	background-color: @primary;
+	border-color: @primary;
+	border-radius: 0px;
+	height: 30px;
+	padding: 0 20px;
+	line-height: 30px;
+	text-transform: none;
+	color: #fff;
+
+	&:hover {
+		background-color: tint(@primary, 15%);
+		border-color: tint(@primary, 15%);
+		color: #fff;
+	}
+
+	&:focus {
+		background-color: tint(@primary, 15%);
+		border-color: tint(@primary, 15%);
+		color: #fff;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="submit"],
+textarea {
+	border-radius: 0;
+}
+
+//input[type="submit"] {
+//  color: #FFF;
+//  background-color: @primary;
+//  border-color: @primary;
+//}
+//
+//input[type="submit"]:hover {
+//  color: #FFF;
+//  background-color: tint(@primary, 15%);
+//  border-color: tint(@primary, 15%);
+//}

@@ -1,0 +1,63 @@
+///--- Address ---
+
+.address {
+	margin-bottom: 30px;
+	font-style: normal;
+	margin: 10px;
+	width: 330px;
+
+	&--main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-flow: wrap;
+	}
+
+	&--map {}
+
+	&--list {
+		max-width: 720px;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: space-between;
+	}
+
+	&--heading {
+		margin-bottom: 10px;
+		color: darken(@primary, 15%);
+	}
+
+	&--subheading {
+		font-size: 2rem;
+		color: darken(@primary, 15%);
+	}
+
+	&--tel {
+		text-decoration: none;
+
+		&:hover {
+			color: darken(@primary, 15%);
+			text-decoration: underline;
+		}
+	}
+
+	&--email {
+		color: @orange;
+		text-decoration: none;
+
+		&:hover {
+			color: @orange;
+			text-decoration: underline;
+		}
+	}
+
+	&--web {
+		color: @orange;
+		text-decoration: none;
+
+		&:hover {
+			color: @orange;
+			text-decoration: underline;
+		}
+	}
+}
